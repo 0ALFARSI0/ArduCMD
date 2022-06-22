@@ -22,8 +22,7 @@ Path = StringVar()
 PJname = StringVar()
 with open("./Logging/path.txt","r") as file:
   FR = file.read()
-  if FR == "": 
-    Path.set(os.getcwd())
+  if FR == "": Path.set(os.getcwd())
   else: Path.set(FR)  
 PJname.set("MyProject")
 #--------------------
