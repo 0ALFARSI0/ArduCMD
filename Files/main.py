@@ -81,7 +81,7 @@ def CRT():
         with open(f"{path_}/{pj}/{pj}.ino","w") as file:
           file.write(f"{f.read()}")
     msg.showinfo("Project Created",f"Project Created as '{pj}'")
-    with open("./Logging/path.txt","w") as file:￼…￼
+    with open("./Logging/path.txt","w") as file: file.write(f"{path_}")
   else: msg.showerror("Can't create the project","dictionary already exists. Please choose another name")
 ################
 #--------------------
