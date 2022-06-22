@@ -43,7 +43,7 @@ def ECFF():
      file.write(f"{Edit.get(1.0, tkinter.END)}")
      print(Edit.get(1.0, tkinter.END))
      Editor.destroy()
-    Edit = tkinter.Text(Editor)
+   Edit = tkinter.Text(Editor)
    Editor.configure(bg="#212325")
 ################  
 def EMIF():
@@ -81,7 +81,7 @@ def CRT():
         with open(f"{path_}/{pj}/{pj}.ino","w") as file:
           file.write(f"{f.read()}")
     msg.showinfo("Project Created",f"Project Created as '{pj}'")
-    with open("./Logging/path.txt","w") as file: file.write(f"{path_}")
+    with open("./Logging/path.txt","w") as file: file.write(path_)
   else: msg.showerror("Can't create the project","dictionary already exists. Please choose another name")
 ################
 #--------------------
