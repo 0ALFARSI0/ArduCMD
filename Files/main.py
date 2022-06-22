@@ -15,6 +15,8 @@ app = CTk()
 app.title("ArduCMD")
 app.resizable(False, False)
 app.geometry("300x200")
+Logo = tkinter.PhotoImage(file="./Images/logo.png")
+app.iconphoto(False,Logo)
 #-------------------
 
 #Deifne/SetVars-----
