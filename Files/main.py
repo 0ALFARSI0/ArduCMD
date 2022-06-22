@@ -34,6 +34,8 @@ def ECFF():
    f = open("./Snippets/Functions.txt","r")
    ff = f.read()
    Editor = tkinter.Toplevel(app)
+   logo = tkinter.PhotoImage(file="./Images/editfile.png")
+   Editor.iconphoto(False,logo)
    Editor.geometry("200x200")
    Editor.title("Editor")
    def SaveFile():
@@ -50,6 +52,8 @@ def EMIF():
    Editor = tkinter.Toplevel(app)
    Editor.geometry("200x200")
    Editor.title("Editor")
+   logo = tkinter.PhotoImage(file="./Images/editfile.png")
+   Editor.iconphoto(False,logo)
    def SaveFile():
      file = open("./Snippets/ArduSnippet.txt","w")
      file.write(f"{Edit.get(1.0, tkinter.END)}")
